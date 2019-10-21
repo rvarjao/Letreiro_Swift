@@ -13,6 +13,10 @@
 		28B7926C235DD7B700F2EB78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B7926A235DD7B700F2EB78 /* Main.storyboard */; };
 		28B7926E235DD7C100F2EB78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B7926D235DD7C100F2EB78 /* Assets.xcassets */; };
 		28B79271235DD7C100F2EB78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28B7926F235DD7C100F2EB78 /* LaunchScreen.storyboard */; };
+		28B7927A235DD7E000F2EB78 /* Letreiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B79278235DD7E000F2EB78 /* Letreiro.swift */; };
+		28B7927B235DD7E000F2EB78 /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B79279235DD7E000F2EB78 /* Pixel.swift */; };
+		28B7927D235DDDD200F2EB78 /* Caractere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7927C235DDDD200F2EB78 /* Caractere.swift */; };
+		28B7927F235DE5A500F2EB78 /* 49822476-digital-font-alphabet-and-numbers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28B7927E235DE5A500F2EB78 /* 49822476-digital-font-alphabet-and-numbers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		28B7926D235DD7C100F2EB78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28B79270235DD7C100F2EB78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28B79272235DD7C100F2EB78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28B79278235DD7E000F2EB78 /* Letreiro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letreiro.swift; sourceTree = "<group>"; };
+		28B79279235DD7E000F2EB78 /* Pixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
+		28B7927C235DDDD200F2EB78 /* Caractere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caractere.swift; sourceTree = "<group>"; };
+		28B7927E235DE5A500F2EB78 /* 49822476-digital-font-alphabet-and-numbers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "49822476-digital-font-alphabet-and-numbers.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		28B79258235DD7B700F2EB78 = {
 			isa = PBXGroup;
 			children = (
+				28B7927E235DE5A500F2EB78 /* 49822476-digital-font-alphabet-and-numbers.jpg */,
 				28B79263235DD7B700F2EB78 /* Letreiro_Swift */,
 				28B79262235DD7B700F2EB78 /* Products */,
 			);
@@ -56,9 +65,12 @@
 		28B79263235DD7B700F2EB78 /* Letreiro_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				28B79268235DD7B700F2EB78 /* ViewController.swift */,
+				28B79278235DD7E000F2EB78 /* Letreiro.swift */,
+				28B7927C235DDDD200F2EB78 /* Caractere.swift */,
+				28B79279235DD7E000F2EB78 /* Pixel.swift */,
 				28B79264235DD7B700F2EB78 /* AppDelegate.swift */,
 				28B79266235DD7B700F2EB78 /* SceneDelegate.swift */,
-				28B79268235DD7B700F2EB78 /* ViewController.swift */,
 				28B7926A235DD7B700F2EB78 /* Main.storyboard */,
 				28B7926D235DD7C100F2EB78 /* Assets.xcassets */,
 				28B7926F235DD7C100F2EB78 /* LaunchScreen.storyboard */,
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B79271235DD7C100F2EB78 /* LaunchScreen.storyboard in Resources */,
+				28B7927F235DE5A500F2EB78 /* 49822476-digital-font-alphabet-and-numbers.jpg in Resources */,
 				28B7926E235DD7C100F2EB78 /* Assets.xcassets in Resources */,
 				28B7926C235DD7B700F2EB78 /* Main.storyboard in Resources */,
 			);
@@ -140,7 +153,10 @@
 			files = (
 				28B79269235DD7B700F2EB78 /* ViewController.swift in Sources */,
 				28B79265235DD7B700F2EB78 /* AppDelegate.swift in Sources */,
+				28B7927B235DD7E000F2EB78 /* Pixel.swift in Sources */,
 				28B79267235DD7B700F2EB78 /* SceneDelegate.swift in Sources */,
+				28B7927D235DDDD200F2EB78 /* Caractere.swift in Sources */,
+				28B7927A235DD7E000F2EB78 /* Letreiro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

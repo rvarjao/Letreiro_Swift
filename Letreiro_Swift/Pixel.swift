@@ -8,8 +8,8 @@
 
 import UIKit
 
-enum Formato{
-    case circulo, quadrado
+enum Formato : Int{
+    case circulo = 0, quadrado = 1
 }
 
 class Pixel: UIView {

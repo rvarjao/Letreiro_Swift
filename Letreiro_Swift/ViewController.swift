@@ -13,7 +13,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var viewLetreiro: UIView!
     
+    @IBOutlet weak var sliderCor: UISlider!
     var letreiro : Letreiro!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -22,7 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         letreiro = Letreiro(frame: viewLetreiro.bounds)
         letreiro.texto = "abcdefghijklmnopqrstuvxyz123456789"
         viewLetreiro.addSubview(letreiro)
-        viewLetreiro.backgroundColor = .red
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -32,7 +34,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-
-
+    @IBAction func sliderValueChanged(_ sender: Any) {
+        if sliderCor.value == 0{
+            letreiro.setArcoIris(arcoIris: true)
+        }else{
+            letreiro.setArcoIris(arcoIris: false)
+            letreiro.cor = UIColor(hue: CGFloat(sliderCor!.value), saturation: 1, brightness: 1, alpha: 1)
+        }
+    }
+    
+    @IBAction func segControlFormatoValueChanged(_ sender: Any) {
+        let segControl = sender as! UISegmentedControl
+        self.letreiro.formato = Formato(rawValue: segControl.selectedSegmentIndex)!
+    }
+    
 }
 

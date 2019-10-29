@@ -13,7 +13,6 @@ enum Formato : Int{
 }
 
 class Pixel: UIView {
-
     var cor : UIColor = .green
     var ligado : Bool = false{
         didSet{
@@ -48,17 +47,13 @@ class Pixel: UIView {
         case Formato.quadrado:
             if (ligado == true){
                 context?.setFillColor(cor.cgColor)
-                context?.setStrokeColor(UIColor.white.cgColor)
+                context?.setStrokeColor(UIColor.clear.cgColor)
                 context?.fill(rect)
             }else{
-                context?.setStrokeColor(cor.cgColor)
-                context?.setFillColor(UIColor.white.cgColor)
+                context?.setStrokeColor(UIColor.darkGray.cgColor)
+                context?.setFillColor(UIColor.clear.cgColor)
                 context?.stroke(rect)
             }
         }
     }
-    
-    
-    
-    
 }

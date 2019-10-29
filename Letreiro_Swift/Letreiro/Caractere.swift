@@ -8,10 +8,16 @@
 
 import UIKit
 
+
 class Caractere: NSObject {
-    
+
+    class var larguraCaractere : Int{
+        get{return 5}
+    }
+
     class func estados(caractere: Character) -> [[Bool]]{
         let c = caractere.uppercased()
+
         switch c {
         case "A":
             return [
@@ -101,16 +107,6 @@ class Caractere: NSObject {
                 [false, false, true , false, false],
                 [false, false, true , false, false],
                 [false, false, true , false, false],
-                [false, true , true , true , false]
-            ]
-        case "C":
-            return [
-                [false, true , true , true , false],
-                [true , false, false, false, true ],
-                [true , false, false, false, false],
-                [true , false, false, false, false],
-                [true , false, false, false, false],
-                [true , false, false, false, true ],
                 [false, true , true , true , false]
             ]
         case "S":
@@ -382,6 +378,16 @@ class Caractere: NSObject {
                 [false, false, false, false, true],
                 [true, false, false, false, true],
                 [false, true, true, true, false]
+            ]
+        case ":":
+            return [
+                [false, false, false, false, false],
+                [false, false, false, false, false],
+                [false, false, true, false, false],
+                [false, false, false, false, false],
+                [false, false, true, false, false],
+                [false, false, false, false, false],
+                [false, false, false, false, false]
             ]
         case " ":
             return [

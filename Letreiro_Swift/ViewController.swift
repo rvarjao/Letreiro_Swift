@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.delegate = self
         
         letreiro = Letreiro(frame: viewLetreiro.bounds)
-        letreiro.texto = "abcdefghijklmnopqrstuvxyz123456789"
+        letreiro.texto = "Letreiro Digital"
         viewLetreiro.addSubview(letreiro)
         
     }

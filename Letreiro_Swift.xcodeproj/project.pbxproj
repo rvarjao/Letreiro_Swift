@@ -45,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285C5B132367D90900519A5E /* Letreiro */ = {
+			isa = PBXGroup;
+			children = (
+				28B79278235DD7E000F2EB78 /* Letreiro.swift */,
+				28B7927C235DDDD200F2EB78 /* Caractere.swift */,
+				28B79279235DD7E000F2EB78 /* Pixel.swift */,
+			);
+			path = Letreiro;
+			sourceTree = "<group>";
+		};
 		28B79258235DD7B700F2EB78 = {
 			isa = PBXGroup;
 			children = (
@@ -66,9 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				28B79268235DD7B700F2EB78 /* ViewController.swift */,
-				28B79278235DD7E000F2EB78 /* Letreiro.swift */,
-				28B7927C235DDDD200F2EB78 /* Caractere.swift */,
-				28B79279235DD7E000F2EB78 /* Pixel.swift */,
+				285C5B132367D90900519A5E /* Letreiro */,
 				28B79264235DD7B700F2EB78 /* AppDelegate.swift */,
 				28B79266235DD7B700F2EB78 /* SceneDelegate.swift */,
 				28B7926A235DD7B700F2EB78 /* Main.storyboard */,
